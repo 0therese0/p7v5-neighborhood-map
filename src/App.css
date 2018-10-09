@@ -1,32 +1,164 @@
-.App {
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#sidebarcontent {
+  margin: 0 auto;
+  text-align: center;
+  background: mediumpurple;
+}
+
+#sidebarcontent span:before {
+  content:" ";
+  display:inline-block;
+  width:1em;
+}
+
+#searchbarcontent img {
+  max-height: 5px;
+}
+
+#search {
+  margin: 1em auto;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+ul {
+  padding: 0 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+li {
+  list-style: none;
+  text-align: left;
+  padding: 1em;
+  border-bottom: 1px solid darkslateblue;
+  color: white;
+  text-align: center;
+}
+
+li:hover {
+  color: white;
+  background: thistle;
+  opacity: 50%;
+  cursor: pointer;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.title {
+  padding: 0.5em 0;
+  /* background-color: mediumslateblue; */
+  background-color: rgb(67, 57, 122);
+  font-family: 'Lobster', cursive;
+}
+
+#menubar {
+  max-height: 29px;
+  margin: 0 0;
+}
+
+.title button {
+  border-left: 1px solid red;
+}
+
+.title button:hover {
+  cursor: pointer;
+  border-left: 1px solid black;
+}
+
+#sidebar {
+  background-color: white;
+  overflow: scroll;
+}
+
+.title button {
+  background: none;
+  border: 0;
+}
+
+li.clicked {
+  background: plum;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Hide the outline for better presentation */
+li:active, li:focus{
+  outline: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dollarsign {
+  color: red;
+  margin-left: 1em;
+}
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  background-color: rgb(67, 57, 122);
+  text-align: center;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+  line-height: 25px;
+  font-size: 75%;
+  text-align: center;
+}
+
+#titlecontent {
+  display:flex;
+  flex-wrap:nowrap;
+  /* vertical align */
+  align-items:center;
+}
+
+#titlecontent #headertext {
+  /* take up rest of line */
+  flex-grow: 1;
+  /* centre text in p */
+  text-align: center;
+  /* Prevent line break */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#input {
+  height: 2em;
+  width: 90%;
+  border: 2px solid mediumslateblue;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+button:focus, button:active{
+  outline: none !important;
+  border:1px solid mediumslateblue;
+  box-shadow: 0 0 10px mediumslateblue;
+}
+
+#input:focus {
+  outline: none !important;
+  border:1px solid rgb(177, 174, 174);
+  box-shadow: 0 0 10px mediumslateblue;
+}
+
+ul:first-child {
+  border-top: 1px solid darkslateblue;
+}
+
+#sidebarcontent a {
+  outline: 0;
 }
