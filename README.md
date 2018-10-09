@@ -4,8 +4,6 @@
 
 This is Project 7 in Udacity's Front End Nano Degree Program, created with React.  It is a single page application that features a map and a list of restaurants.  The app will load a map with 10 markers related to local restaurants.  When you click on a marker, a window will open with information about that restaurant.  There will be a list on the left/sidebar, when you click a restaurant the marker will animate and open a window with it's information.  The app also allows users to tab through each of the important elements of the page with A11y or Accessibility.  This project is bootstrapped with [create-react-app](https://github.com/facebookincubator/create-react-app), [Google Maps API](https://cloud.google.com/maps-platform/) and [Foursquare API](https://developer.foursquare.com/) to deliver content.
 
-You can take a quick peek at the **live demo** [here](LINK HERE)
-
 ## Installation/ To get started
 
 * Clone this [repository](https://github.com/0therese0/p7-neighborhood-map.git)
