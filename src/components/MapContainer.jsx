@@ -93,7 +93,7 @@ class MapContainer extends React.Component {
     this.props.setCurrMarkerId(null)
     }
 
-  getRequestString = (id) => ``
+  getRequestString = (id) => `https://api.foursquare.com/v2/venues/${id}?&client_id=3APLBSK4CCFQZFOY1XRWH0NGFIW0FQLZXYD4QBQIRSFWDAOB&client_secret=0WRAHHXWM1MYQNM5RDEYTY3K5QJ4FGKTD3U0XQ3Q31WNI4X5&v=20181007&limit=1`
 
   render() {
     const basicMarkerData = this.props.currBasicMarkerData,
@@ -180,5 +180,5 @@ class MapContainer extends React.Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: ''
+  apiKey: 'AIzaSyCGNAbtSPT34eumdty4CcBlIzHgHxRZFTE'
 })(MapContainer)
